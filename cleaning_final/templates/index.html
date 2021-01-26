@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <link rel="stylesheet" type="text/css" href="./web.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+/>
+<link rel="stylesheet" type="text/css" href="./static/web.css">
+
+<!-- <style>
+.alert {
+  background: green;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  margin: 1rem;
+}
+</style> -->
+</head>
+
+
+<body>
+
+
+      
+<div class="sidenav">
+    <a href="./website.html">Home</a>
+  <a href="./methodologies.html">Methodologies</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Research 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="./input_html/index.html">Get Tested</a>
+</div>
+
+<div class="main">
+  <h2  style = 'text-align:left'>Sidebar Dropdown</h2>
+  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+  <p>This sidebar is of full height (100%) and always shown.</p>
+  <p>Some random text..</p>
+</div>
+
+<div class = "container " id='grow' >
+    <div class ="row" style= margin-left:200px>
+    <div class='col-lg-6'>
+        <div class='tableauPlaceholder' id='viz1608765224664' style='position: relative'  margin-right:200px><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16087464496100&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_16087464496100&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16087464496100&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1608765224664');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1024px';vizElement.style.height='975px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+    <h3>Health Check Up</h3>
+  </div>
+
+  <!-- Form -->
+  <!-- 'A1c','BMI','Age','HDL Chol','Weight', 'Diastolic BP', 'waist/hip ratio' -->
+  <div class="container">
+
+    <form action="/send" method="POST">
+      <label for="Number One">A1c</label>
+      <input
+        type="number"
+        placeholder="A1c"
+        class="u-full-width"
+        name="num1"
+      />
+
+      <label for="Number Two">Glucose</label>
+      <input
+        type="number"
+        placeholder="Glucose"
+        class="u-full-width"
+        name="num2"
+      />
+
+      <label for="Number Three">Systolic Blood Pressure</label>
+      <input
+        type="number"
+        placeholder="BPSystolic"
+        class="u-full-width"
+        name="num3"
+      />
+
+      <label for="Number four">Height</label>
+      <input
+        type="number"
+        placeholder="Height"
+        class="u-full-width"
+        name="num4"
+      />
+
+      <label for="Number five">Age</label>
+      <input
+        type="number"
+        placeholder="Age"
+        class="u-full-width"
+        name="num5"
+      />
+
+      <label for="Number six">Waist/Hip Ratio</label>
+      <input
+        type="number"
+        placeholder="WHratio"
+        class="u-full-width"
+        name="num6"
+      />
+
+      <!-- <label for="Number seven">Waist Hip ratio</label>
+      <input
+        type="number"
+        placeholder="waist/hip ratio"
+        class="u-full-width"
+        name="num7" -->
+      
+
+      <label for="Operation">Operation</label>
+      <select class="u-full-width" name="operation">
+        <option value="randomforest">Random Forrest Prediciton</option>
+        <option value="decisiontree">Decision Tree Prediciton</option>
+        <!-- <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option> -->
+      </select>
+
+      <input type="submit" value="Calculate" id="calc_btn" />
+      <br />
+      <div class="alert">
+        {{ sum }}
+      </div>
+    </form>
+  </div>
+
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+    
+    
+    </body>
+    </html> 
