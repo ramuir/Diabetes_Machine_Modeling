@@ -7,6 +7,26 @@ body {
 }
 
 
+.disclaimer {
+    position:fixed;
+    background-color:aquamarine;
+    width:100%;
+    left:0;
+    bottom:0;
+    }
+.disclaimer p {
+      text-align:center;
+      }
+
+
+
+
+
+#viz1611712426232{
+    width:80% !important;
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,6 +56,7 @@ li a:hover {
 
 .alert {
     background: #3425ff;
+    /* text-align:"center"; */
     padding: 1rem;
     border-radius: 5px;
     color: white;
