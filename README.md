@@ -44,7 +44,6 @@ List of features ready and TODOs for future development
 
 To-do list:
 * We would like to add additional risk predictors for other health maladies, such as; heart disease and stroke.
-* ANY OTHER IDEAS FOR TO-DO FEATURES?
 
 ## Status
 Project is: Complete
