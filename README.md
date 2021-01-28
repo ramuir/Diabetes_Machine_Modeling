@@ -50,7 +50,7 @@ To-do list:
 Project is: Complete
 
 ## Inspiration
-We are all interested in health and healthcare topics. Diabetes is a serious health condition that can lead to many other health problems, especially if managed poorly. All of our team members have family members affected by Diabetes. It is important that we focus on health issues that we can manage and control to some level to promote good health, quality of life and longevity.
+We are all interested in health and healthcare topics. Diabetes is a serious health condition that can lead to many other health problems, especially if managed poorly. All of our team members have family members affected by Diabetes. It is important that we focus on health issues that we can manage and control to some level to promote good health, quality of life and longetivity.
 
 ## Contact
 Created by:
