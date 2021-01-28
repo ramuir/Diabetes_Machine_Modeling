@@ -17,7 +17,7 @@
 Our group wanted to create a health related interactive web-page with data visualizations using Tableau and a machine learning algorithm to quantify an individual's risk for diabetes based on their own health information inputs. The risk assessment tool is intended to only provide the user with a non-medical result suggesting they are at low or high risk for diabetes and should consult their primary care physician or other qualified medical practitioner for a full assessment on their health.
 
 ## Screenshots
-![Example screenshot](./cleaning_final/statistic_img/confusion_matrix.png)  DO WE WANT TO ADD SCREENSHOTS
+![Example screenshot](./cleaning_final/statistic_img/confusion_matrix.png)  
 ![Example screenshot](./cleaning_final/statistic_img/diabetes_count.png)
 ![Example screenshot](./cleaning_final/statistic_img/feature_distribution.png)
 ![Example screenshot](./cleaning_final/statistic_img/feature_importance.png)
@@ -44,13 +44,12 @@ List of features ready and TODOs for future development
 
 To-do list:
 * We would like to add additional risk predictors for other health maladies, such as; heart disease and stroke.
-* ANY OTHER IDEAS FOR TO-DO FEATURES?
 
 ## Status
 Project is: Complete
 
 ## Inspiration
-We are all interested in health and healthcare topics. Diabetes is a serious health condition that can lead to many other health problems, especially if managed poorly. All of our team members have family members affected by Diabetes. It is important that we focus on health issues that we can manage and control to some level to promote good health, quality of life and longevity.
+We are all interested in health and healthcare topics. Diabetes is a serious health condition that can lead to many other health problems, especially if managed poorly. All of our team members have family members affected by Diabetes. It is important that we focus on health issues that we can manage and control to some level to promote good health, quality of life and longetivity.
 
 ## Contact
 Created by:
