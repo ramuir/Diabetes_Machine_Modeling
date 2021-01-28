@@ -1,0 +1,85 @@
+body {
+    margin: auto;
+    background: #25A3FF;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./images/medical-background-with-loop_4p1uvboye_thumbnail-1080_08.png');
+    background-size: cover;
+}
+
+
+.disclaimer {
+    position:fixed;
+    background-color:aquamarine;
+    width:100%;
+    left:0;
+    bottom:0;
+    }
+.disclaimer p {
+      text-align:center;
+      }
+
+
+
+
+
+#viz1611712426232{
+    width:80% !important;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #3425ff;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+
+
+.col {
+    display:table-cell;
+    padding:10px;
+}
+
+
+.alert {
+    background: #3425ff;
+    /* text-align:"center"; */
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    margin: 1rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    column {
+        flex:50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}

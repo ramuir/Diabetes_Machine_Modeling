@@ -1,150 +1,167 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diabetes Awarness</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../static/final.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<!-- <link rel="stylesheet" type="text/css" href="./web.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-/>
-<link rel="stylesheet" type="text/css" href="./static/web.css">
 
-<!-- <style>
-.alert {
-  background: green;
-  padding: 1rem;
-  border-radius: 5px;
-  color: white;
-  margin: 1rem;
-}
-</style> -->
 </head>
 
 
 <body>
 
-
+<nav class="navbar">
+  <div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <a class="navbar-brand"></a> 
       
-<div class="sidenav">
-    <a href="./website.html">Home</a>
-  <a href="./methodologies.html">Methodologies</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Research 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <a href="./input_html/index.html">Get Tested</a>
-</div>
-
-<div class="main">
-  <h2  style = 'text-align:left'>Sidebar Dropdown</h2>
-  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
-  <p>This sidebar is of full height (100%) and always shown.</p>
-  <p>Some random text..</p>
-</div>
-
-<div class = "container " id='grow' >
-    <div class ="row" style= margin-left:200px>
-    <div class='col-lg-6'>
-        <div class='tableauPlaceholder' id='viz1608765224664' style='position: relative'  margin-right:200px><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16087464496100&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_16087464496100&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16087464496100&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1608765224664');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1024px';vizElement.style.height='975px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    </div>
-    
-</div>
-</div>
-</div>
-
-
-
-
-<div class="container">
-    <h3>Health Check Up</h3>
-  </div>
-
-  <!-- Form -->
-  <!-- 'A1c','BMI','Age','HDL Chol','Weight', 'Diastolic BP', 'waist/hip ratio' -->
-  <div class="container">
-
-    <form action="/send" method="POST">
-      <label for="Number One">A1c</label>
-      <input
-        type="number"
-        placeholder="A1c"
-        class="u-full-width"
-        name="num1"
-      />
-
-      <label for="Number Two">Glucose</label>
-      <input
-        type="number"
-        placeholder="Glucose"
-        class="u-full-width"
-        name="num2"
-      />
-
-      <label for="Number Three">Systolic Blood Pressure</label>
-      <input
-        type="number"
-        placeholder="BPSystolic"
-        class="u-full-width"
-        name="num3"
-      />
-
-      <label for="Number four">Height</label>
-      <input
-        type="number"
-        placeholder="Height"
-        class="u-full-width"
-        name="num4"
-      />
-
-      <label for="Number five">Age</label>
-      <input
-        type="number"
-        placeholder="Age"
-        class="u-full-width"
-        name="num5"
-      />
-
-      <label for="Number six">Waist/Hip Ratio</label>
-      <input
-        type="number"
-        placeholder="WHratio"
-        class="u-full-width"
-        name="num6"
-      />
-
-      <!-- <label for="Number seven">Waist Hip ratio</label>
-      <input
-        type="number"
-        placeholder="waist/hip ratio"
-        class="u-full-width"
-        name="num7" -->
-      
-
-      <label for="Operation">Operation</label>
-      <select class="u-full-width" name="operation">
-        <option value="randomforest">Random Forrest Prediciton</option>
-        <option value="decisiontree">Decision Tree Prediciton</option>
-        <!-- <option value="multiply">Multiply</option>
-        <option value="divide">Divide</option> -->
-      </select>
-
-      <input type="submit" value="Calculate" id="calc_btn" />
-      <br />
-      <div class="alert">
-        {{ sum }}
       </div>
-    </form>
+      <div class="navbar" id="myNavbar">
+      <ul class="nav-navbar-nav">
+          <li><a href="https://www.cdc.gov/diabetes/index.html" rel="noopener noreferrer" target="_blank"><b>CDC</b></a></li>
+          <li><a href="https://www.diabetes.org/" rel="noopener noreferrer" target="blank"><b>American Diabetes Association</b></a></li>
+          <li><a href="https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444" rel="noopener noreferrer" target="blank"><b>Mayo Clinic</b></a></li>
+          <li><a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html" rel="noopener noreferrer" target="blank"><b>BMI Calculator</b></a></li>
+          <li><a href="https://www.calorieking.com/us/en/tools/waist-hip-ratio-calculator/" rel="noopener noreferrer" target="blank"><b>Waist/Hip Calculator</b></a></li>
+          
+      </ul>
+      
+      </div>
+  </div>
+</nav>
+    
+<div class="container text-center">    
+  <h1 class= "header" style ="color:white"><b>Diabetes Awareness</b></h1><br>
+                <p style="color:white">Diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose comes from the foods you eat. Insulin is a hormone that helps the glucose get into your cells to give them energy. With type 1 diabetes, your body does not make insulin. With type 2 diabetes, the more common type, your body does not make or use insulin well. Without enough insulin, the glucose stays in your blood. You can also have prediabetes. This means that your blood sugar is higher than normal but not high enough to be called diabetes. Having prediabetes puts you at a higher risk of getting type 2 diabetes.</p>
+                <div id="division" class="panel-body"></div>
+</div> 
+
+
+    <div class ="row">
+    <div class='col-md-9' style='width:80%'>
+
+      <div class='tableauPlaceholder' id='viz1611712426232' style='position: relative;margin-left:100px;margin-right:100px;'><noscript><a href='#'><img alt=' '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;david_tableau_2&#47;Story2&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='david_tableau_2&#47;Story2' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;david_tableau_2&#47;Story2&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+          <param name='filter' value='publish=yes' />
+        </object></div>
+      <script
+        type='text/javascript'>                    var divElement = document.getElementById('viz1611712426232'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    </div>
+
+
+    <div class="col-med-3">
+      <h4 class="text" style= "color: white">Health Check Up</h4>
+      
+      <form action="/send" method="POST">
+
+        <label for="Number One">A1c</label>
+        <br>
+        <input
+          type="number"
+          step="0.1"
+          placeholder="A1c"
+          class="u-full-width"
+          name="num1"
+        />
+        <br>
+        <br>
+        <label for="Number Two">Glucose</label>
+        <br>
+        <input
+          type="number"
+          placeholder="Glucose"
+          class="u-full-width"
+          name="num2"
+        />
+        <br>
+        <br>
+        <label for="Number Three">Systolic Blood Pressure</label>
+        <br>
+        <input
+          type="number"
+          placeholder="SystolicBP"
+          class="u-full-width"
+          name="num3"
+        />
+        <br>
+        <br>
+        <label for="Number four">Height</label>
+        <br>
+        <input
+          type="number"
+          
+          placeholder="Height"
+          class="u-full-width"
+          name="num4"
+        /><br>
+        <br>
+  
+        <label for="Number five">Age</label>
+        <br>
+        <input
+          type="number"
+          placeholder="Age"
+          class="u-full-width"
+          name="num5"
+        /><br>
+        <br>
+  
+        <label for="Number six">Waist/Hip Ratio</label>
+        <br>
+        <input
+          type="number"
+          step="0.1"
+          placeholder="WHratio"
+          class="u-full-width"
+          name="num6"
+        /><br>
+        <br>
+        
+       
+        <br>
+        <br>
+        <label for="Operation">Operation</label> <br>
+        <select class="u-full-width" name="operation">
+          <option value="randomforest">RandomForrest</option>
+          <option value="decisiontree">DesicionTree</option>
+        </select>
+  
+        <input type="submit" value="Calculate" id="calc_btn" />
+        <br />
+        <div class="alert">
+          {{ sum }}
+        </div>
+      </form>
   </div>
 
+
+
+
+</div>
 
 <script>
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -166,4 +183,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
     
     
     </body>
+
+
+    <footer style = "position:relative;margin-top: -180px; height: 45px; clear:both;background-color:aquamarine;width:100%;left:0;bottom:0;display: inline-block;">
+      <p>Disclaimer: The materials on this site are for your general educational information only. 
+        The information you read on this website cannot replace the relationship and diagnosis that
+        you recieve with your healthcare professional. All data entry is subject to anonymity, but 
+        is given at your own risk. The website opperators should not be held liable if any user suffers
+        injury or loss. 
+       </p>
+  
+      </footer>
+
     </html> 

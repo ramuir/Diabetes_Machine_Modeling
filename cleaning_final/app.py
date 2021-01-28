@@ -41,10 +41,10 @@ def send(output=sum):
     
             output = random_forest.predict(arr_num.reshape(1,-1))
 
-            if output == '0':
-                output = 'Diabetic'
+            if output == [0]:
+                output = 'High Risk'
             else:
-                output = 'Not Diabetic'
+                output = 'Low Risk'
 
             return render_template('index.html', sum=output)
 
@@ -54,10 +54,10 @@ def send(output=sum):
             arr_num = np.array([num1,num2,num3,num4,num5,num6])
             output = random_forest.predict(arr_num.reshape(1,-1))
             
-            if output == '0':
-                output = 'Diabetic'
+            if output == [0]:
+                output = 'High Risk'
             else:
-                output = 'Not Diabetic'
+                output = 'Low Risk'
             
             return render_template('index.html', sum=output)
 
