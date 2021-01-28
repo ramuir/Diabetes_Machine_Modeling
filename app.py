@@ -20,11 +20,11 @@ decision_tree = joblib.load("./Models/Decision_Tree_Model.sav")
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
     return render_template('index.html')
 
-@app.route('/send', methods=['POST'])
+@app.route('/send', methods=['GET','POST'])
 def send(output=sum):
     
     if request.method == 'POST':
@@ -34,7 +34,7 @@ def send(output=sum):
         num4 = request.form['num4']
         num5 = request.form['num5']
         num6 = request.form['num6']
-        # num7 = request.form['num7']
+        
         operation = request.form['operation']
 
         if operation == 'randomforest':
@@ -69,4 +69,4 @@ def send(output=sum):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port = 5044)
